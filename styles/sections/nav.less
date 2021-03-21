@@ -1,0 +1,57 @@
+
+.nav-container {
+    background-color: @navBackgroundColor;
+    z-index: 5;
+
+    nav {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        min-height: 10vh;
+        justify-content: space-between;
+        align-items: center;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            flex: 1;
+            list-style-type: none;
+            align-items: center;
+            @media (max-width: 1100px) {
+                display: none;
+            }
+
+            #contact {
+                border-radius: 10px;
+                background-color: @primaryColor;
+                padding: 15px 30px;
+            }
+        }
+
+        #logo {
+            flex: 1.5;
+            font-family: 'Poppins', sans-serif;
+            font-size: 2rem;
+            #logo-img {
+                height: calc(10vh - 20px);
+                float: left;
+                padding: 5px;
+            }
+            div {
+                // background-color: @accentColor;
+                height: calc(10vh - 20px);
+                justify-content: center;
+                align-items: center;
+                line-height: calc(10vh - 20px);
+                transform: translateX(10px);
+            }
+        }
+
+        #nav-min {
+            display: none;
+            @media (max-width: 1100px) {
+                display: block;
+            }
+        }
+    }
+}
