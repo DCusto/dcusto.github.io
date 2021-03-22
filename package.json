@@ -2,7 +2,7 @@
   "name": "q-me-website",
   "version": "1.0.0",
   "description": "Landing page for Q me",
-  "main": "index.js",
+  "main": "index.html",
   "author": "Dhushyanth",
   "license": "MIT",
   "private": true,
@@ -12,7 +12,8 @@
   },
   "scripts": {
     "dev": "parcel index.html",
-    "clean": "npx rimraf dist && npx rimraf .parcel-cache"
+    "clean": "npx rimraf dist && npx rimraf .parcel-cache",
+    "build": "parcel build index.html --dist-dir output"
   },
   "dependencies": {
     "@types/animejs": "^3.1.3",
