@@ -8,3 +8,10 @@ lottie.loadAnimation({
     loop: true,
     autoplay: true,
 });
+
+function isInViewport(element: HTMLElement) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0
+    );
+}
