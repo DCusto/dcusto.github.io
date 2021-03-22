@@ -1,0 +1,24 @@
+#features {
+    padding: 0vw 10vw;
+    .features-grid-container {
+        justify-items: center;
+        .header-list-item {
+            display: grid;
+            grid-template-columns: 40vw 40vw;
+            grid-template-rows: auto;
+            @media (max-width: 1100px) {
+                grid-template-columns: auto;
+                grid-template-rows: auto auto;
+            }
+            img {
+                max-width: 30vw;
+                justify-self: end;
+                @media (max-width: 1100px) {
+                    max-width: 80vw;
+                    justify-self: center;
+                    margin-top: 10vh;
+                }
+            }
+        }
+    }
+}
