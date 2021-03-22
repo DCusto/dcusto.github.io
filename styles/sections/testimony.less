@@ -1,6 +1,9 @@
 #testimony {
-    padding: 10vh 10vw;
-    background: url(../../assets/static/waves.svg);
+    padding-top: 10vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    background: url(../../assets/static/waves.svg) no-repeat;
+    background-size: cover;
     .testimony-grid-container {
         margin: 30px 0px 0px;
         display: flex;
@@ -12,5 +15,11 @@
         .testimony-content {
             margin: 15px 0px 0px;
         }
+        @media (max-width: 1100px) {
+            flex-direction: column;
+        }
+    }
+    @media (max-width: 1100px) {
+        background-position: bottom;
     }
 }
