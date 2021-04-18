@@ -49,7 +49,7 @@ html {
 
 p {
   font-size: 14px;
-  color: #a0a6ad;
+  color: #666666ff;
   line-height: 26px;
   font-family: 'Roboto', sans-serif;
   margin-bottom: 0;
@@ -706,8 +706,8 @@ button:focus {
 }
 
 .hero-area-2 .contents p {
-  color: #a0a6ad;
-  font-size: 14px;
+  color: #666666ff;
+  font-size: 20px;
   line-height: 26px;
 }
 
